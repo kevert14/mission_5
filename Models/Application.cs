@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Globalization;
+using System.Threading;
 
 namespace mission4.Models
 {
@@ -11,20 +13,27 @@ namespace mission4.Models
         [Key]
         [Required]
         public int MovieID { get; set; }
-        public string Category { get; set; }
+
+        [Required]
         public string Title { get; set; }
 
-        [Range(typeof(DateTime), "1/1/1900", "1/1/2100",
-        ErrorMessage = "Value for {0} must be between {1} and {2}")]
+        
+        [Range(1888, 2100)]
         public ushort Year { get; set; }
 
         public string Director { get; set; }
+
         public string Rating { get; set; }
+
         public bool Edited { get; set; }
+
         public string Lent { get; set; }
 
-        [Range(1,25)]
+        [Range(0, 25)]
         public string Notes { get; set; }
 
+        public int CategoryID { get; set; }
+
+        public Category Category { get; set; }
     }
 }

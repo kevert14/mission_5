@@ -8,7 +8,7 @@ using mission4.Models;
 namespace mission4.Migrations
 {
     [DbContext(typeof(MovieContext))]
-    [Migration("20220202043516_Initial")]
+    [Migration("20220203050240_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -42,6 +42,7 @@ namespace mission4.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Title")
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<ushort>("Year")
@@ -89,6 +90,18 @@ namespace mission4.Migrations
                             Rating = "PG-13",
                             Title = "Lord of the Rings: The Return of the King",
                             Year = (ushort)2002
+                        },
+                        new
+                        {
+                            MovieID = 4,
+                            CategoryID = 3,
+                            Director = "Kyle Evert",
+                            Edited = true,
+                            Lent = "David Evert",
+                            Notes = "Just a sample here",
+                            Rating = "PG",
+                            Title = "test",
+                            Year = (ushort)2022
                         });
                 });
 
@@ -103,7 +116,54 @@ namespace mission4.Migrations
 
                     b.HasKey("CategoryID");
 
-                    b.ToTable("Category");
+                    b.ToTable("Categories");
+
+                    b.HasData(
+                        new
+                        {
+                            CategoryID = 1,
+                            CategoryName = "Action/Adventure"
+                        },
+                        new
+                        {
+                            CategoryID = 2,
+                            CategoryName = "Comedy"
+                        },
+                        new
+                        {
+                            CategoryID = 3,
+                            CategoryName = "Drama"
+                        },
+                        new
+                        {
+                            CategoryID = 4,
+                            CategoryName = "Family"
+                        },
+                        new
+                        {
+                            CategoryID = 5,
+                            CategoryName = "Horror/Suspense"
+                        },
+                        new
+                        {
+                            CategoryID = 6,
+                            CategoryName = "Family"
+                        },
+                        new
+                        {
+                            CategoryID = 7,
+                            CategoryName = "Miscellaneous"
+                        },
+                        new
+                        {
+                            CategoryID = 8,
+                            CategoryName = "Television"
+                        },
+                        new
+                        {
+                            CategoryID = 9,
+                            CategoryName = "VHS"
+                        });
                 });
 
             modelBuilder.Entity("mission4.Models.Application", b =>

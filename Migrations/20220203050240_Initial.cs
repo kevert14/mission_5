@@ -7,7 +7,7 @@ namespace mission4.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Category",
+                name: "Categories",
                 columns: table => new
                 {
                     CategoryID = table.Column<int>(nullable: false)
@@ -16,7 +16,7 @@ namespace mission4.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Category", x => x.CategoryID);
+                    table.PrimaryKey("PK_Categories", x => x.CategoryID);
                 });
 
             migrationBuilder.CreateTable(
@@ -25,7 +25,7 @@ namespace mission4.Migrations
                 {
                     MovieID = table.Column<int>(nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
-                    Title = table.Column<string>(nullable: true),
+                    Title = table.Column<string>(nullable: false),
                     Year = table.Column<ushort>(nullable: false),
                     Director = table.Column<string>(nullable: true),
                     Rating = table.Column<string>(nullable: true),
@@ -38,12 +38,57 @@ namespace mission4.Migrations
                 {
                     table.PrimaryKey("PK_Responses", x => x.MovieID);
                     table.ForeignKey(
-                        name: "FK_Responses_Category_CategoryID",
+                        name: "FK_Responses_Categories_CategoryID",
                         column: x => x.CategoryID,
-                        principalTable: "Category",
+                        principalTable: "Categories",
                         principalColumn: "CategoryID",
                         onDelete: ReferentialAction.Cascade);
                 });
+
+            migrationBuilder.InsertData(
+                table: "Categories",
+                columns: new[] { "CategoryID", "CategoryName" },
+                values: new object[] { 1, "Action/Adventure" });
+
+            migrationBuilder.InsertData(
+                table: "Categories",
+                columns: new[] { "CategoryID", "CategoryName" },
+                values: new object[] { 2, "Comedy" });
+
+            migrationBuilder.InsertData(
+                table: "Categories",
+                columns: new[] { "CategoryID", "CategoryName" },
+                values: new object[] { 3, "Drama" });
+
+            migrationBuilder.InsertData(
+                table: "Categories",
+                columns: new[] { "CategoryID", "CategoryName" },
+                values: new object[] { 4, "Family" });
+
+            migrationBuilder.InsertData(
+                table: "Categories",
+                columns: new[] { "CategoryID", "CategoryName" },
+                values: new object[] { 5, "Horror/Suspense" });
+
+            migrationBuilder.InsertData(
+                table: "Categories",
+                columns: new[] { "CategoryID", "CategoryName" },
+                values: new object[] { 6, "Family" });
+
+            migrationBuilder.InsertData(
+                table: "Categories",
+                columns: new[] { "CategoryID", "CategoryName" },
+                values: new object[] { 7, "Miscellaneous" });
+
+            migrationBuilder.InsertData(
+                table: "Categories",
+                columns: new[] { "CategoryID", "CategoryName" },
+                values: new object[] { 8, "Television" });
+
+            migrationBuilder.InsertData(
+                table: "Categories",
+                columns: new[] { "CategoryID", "CategoryName" },
+                values: new object[] { 9, "VHS" });
 
             migrationBuilder.InsertData(
                 table: "Responses",
@@ -60,6 +105,11 @@ namespace mission4.Migrations
                 columns: new[] { "MovieID", "CategoryID", "Director", "Edited", "Lent", "Notes", "Rating", "Title", "Year" },
                 values: new object[] { 3, 1, "Peter Jackson", false, "", "", "PG-13", "Lord of the Rings: The Return of the King", (ushort)2002 });
 
+            migrationBuilder.InsertData(
+                table: "Responses",
+                columns: new[] { "MovieID", "CategoryID", "Director", "Edited", "Lent", "Notes", "Rating", "Title", "Year" },
+                values: new object[] { 4, 3, "Kyle Evert", true, "David Evert", "Just a sample here", "PG", "test", (ushort)2022 });
+
             migrationBuilder.CreateIndex(
                 name: "IX_Responses_CategoryID",
                 table: "Responses",
@@ -72,7 +122,7 @@ namespace mission4.Migrations
                 name: "Responses");
 
             migrationBuilder.DropTable(
-                name: "Category");
+                name: "Categories");
         }
     }
 }

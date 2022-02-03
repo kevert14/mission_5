@@ -1,5 +1,48 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
+﻿@{
+    ViewData["Title"] = "Movie Table";
 }
+@model List<Application>
+
+<head>
+    <title>Movie Table</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<div class="container">
+    <table class="table table-hover table-striped table-bordered">
+        <thead style="font-weight:bold">
+            <tr>
+                <td scope="col">Title</td>
+                <td scope="col">Category</td>
+                <td scope="col">Year</td>
+                <td scope="col">Director</td>
+                <td scope="col">Rating</td>
+                <td scope="col">Edited</td>
+                <td scope="col">Lent to</td>
+                <td scope="col">Notes</td>
+            </tr>
+        </thead>
+
+        <tbody>
+            @foreach (var x in Model)
+            {
+                <tr>
+                    <td>@x.Title</td>
+                    <td>@x.Category.CategoryName</td>
+                    <td>@x.Year</td>
+                    <td>@x.Director</td>
+                    <td>@x.Rating</td>
+                    <td>@x.Edited</td>
+                    <td>@x.Lent</td>
+                    <td>@x.Notes</td>
+                    <td><a class="btn" asp-controller="Home" asp-action="Edit" asp-route-applicationid="@x.MovieID">Edit</a></td>
+                    <td><a class="btn" asp-controller="Home" asp-action="Delete" asp-route-applicationid="@x.MovieID">Delete</a></td>
+                </tr>
+
+            }
+        </tbody>
+    </table>
+</div>

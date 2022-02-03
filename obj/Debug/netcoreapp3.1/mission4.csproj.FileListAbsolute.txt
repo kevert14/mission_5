@@ -22,10 +22,7 @@
 /Users/kyleevert/Projects/mission4/mission4/obj/Debug/netcoreapp3.1/mission4.TagHelpers.output.cache
 /Users/kyleevert/Projects/mission4/mission4/obj/Debug/netcoreapp3.1/mission4.RazorCoreGenerate.cache
 /Users/kyleevert/Projects/mission4/mission4/obj/Debug/netcoreapp3.1/Razor/Views/Home/Index.cshtml.g.cs
-/Users/kyleevert/Projects/mission4/mission4/obj/Debug/netcoreapp3.1/Razor/Views/Home/Privacy.cshtml.g.cs
-/Users/kyleevert/Projects/mission4/mission4/obj/Debug/netcoreapp3.1/Razor/Views/Shared/Error.cshtml.g.cs
 /Users/kyleevert/Projects/mission4/mission4/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_Layout.cshtml.g.cs
-/Users/kyleevert/Projects/mission4/mission4/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_ValidationScriptsPartial.cshtml.g.cs
 /Users/kyleevert/Projects/mission4/mission4/obj/Debug/netcoreapp3.1/Razor/Views/_ViewImports.cshtml.g.cs
 /Users/kyleevert/Projects/mission4/mission4/obj/Debug/netcoreapp3.1/Razor/Views/_ViewStart.cshtml.g.cs
 /Users/kyleevert/Projects/mission4/mission4/obj/Debug/netcoreapp3.1/mission4.RazorTargetAssemblyInfo.cache
@@ -35,7 +32,6 @@
 /Users/kyleevert/Projects/mission4/mission4/obj/Debug/netcoreapp3.1/mission4.pdb
 /Users/kyleevert/Projects/mission4/mission4/obj/Debug/netcoreapp3.1/mission4.genruntimeconfig.cache
 /Users/kyleevert/Projects/mission4/mission4/obj/Debug/netcoreapp3.1/mission4.csproj.CopyComplete
-/Users/kyleevert/Projects/mission4/mission4/obj/Debug/netcoreapp3.1/Razor/Views/Home/movies.cshtml.g.cs
 /Users/kyleevert/Projects/mission4/mission4/obj/Debug/netcoreapp3.1/Razor/Views/Home/MyPodcasts.cshtml.g.cs
 /Users/kyleevert/Projects/mission4/mission4/obj/Debug/netcoreapp3.1/Razor/Views/Home/response.cshtml.g.cs
 /Users/kyleevert/Projects/mission4/mission4/bin/Debug/netcoreapp3.1/Microsoft.Bcl.AsyncInterfaces.dll
@@ -79,3 +75,6 @@
 /Users/kyleevert/Projects/mission4/mission4/bin/Debug/netcoreapp3.1/runtimes/win-arm64/native/e_sqlite3.dll
 /Users/kyleevert/Projects/mission4/mission4/bin/Debug/netcoreapp3.1/runtimes/win-x64/native/e_sqlite3.dll
 /Users/kyleevert/Projects/mission4/mission4/bin/Debug/netcoreapp3.1/runtimes/win-x86/native/e_sqlite3.dll
+/Users/kyleevert/Projects/mission4/mission4/obj/Debug/netcoreapp3.1/Razor/Views/Home/movieTable.cshtml.g.cs
+/Users/kyleevert/Projects/mission4/mission4/obj/Debug/netcoreapp3.1/Razor/Views/Home/InputMovies.cshtml.g.cs
+/Users/kyleevert/Projects/mission4/mission4/obj/Debug/netcoreapp3.1/Razor/Views/Home/Delete.cshtml.g.cs
