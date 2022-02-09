@@ -14,6 +14,7 @@ namespace mission4.Models
         public DbSet<Application> Responses { get; set; }
         public DbSet<Category> Categories { get; set; }
 
+        // seeding for database
         protected override void OnModelCreating(ModelBuilder mb)
         {
             mb.Entity<Category>().HasData(

@@ -10,6 +10,8 @@ namespace mission4.Models
 {
     public class Application
     {
+        //Desired inputs for movies
+
         [Key]
         [Required]
         public int MovieID { get; set; }

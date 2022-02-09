@@ -1,0 +1,42 @@
+﻿<Properties StartupConfiguration="{A6507DAE-0273-462F-8883-EB3C1ED3AE50}|Default">
+  <MonoDevelop.Ide.ItemProperties.mission4 PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Views/Home/response.cshtml">
+    <Files>
+      <File FileName="Controllers/HomeController.cs" Line="92" Column="1" />
+      <File FileName="Models/Category.cs" Line="11" Column="19" />
+      <File FileName="Models/MovieContext.cs" Line="17" Column="32" />
+      <File FileName="Views/Home/Delete.cshtml" Line="29" Column="12" />
+      <File FileName="Models/Application.cs" Line="14" Column="1" />
+      <File FileName="Properties/launchSettings.json" Line="1" Column="1" />
+      <File FileName="Views/Home/Index.cshtml" Line="9" Column="16" />
+      <File FileName="Views/Home/InputMovies.cshtml" Line="25" Column="63" />
+      <File FileName="Views/Home/movieTable.cshtml" Line="31" Column="45" />
+      <File FileName="Views/Home/MyPodcasts.cshtml" Line="9" Column="27" />
+      <File FileName="Views/Home/response.cshtml" Line="7" Column="6" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="mission4" expanded="True">
+            <Node name="mission4" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True">
+                  <Node name="response.cshtml" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

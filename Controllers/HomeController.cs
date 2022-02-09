@@ -22,19 +22,19 @@ namespace mission4.Controllers
             _MovieContext = movieVariable;
         }
 
-
+        // Constructo for Index
         public IActionResult Index()
         {
             return View();
         }
 
-
+        // Constructor for Podcast view
         public IActionResult GoPodcasts()
         {
             return View("MyPodcasts");
         }
 
-
+        // get and post constructors for InpuMovies view
         [HttpGet]
         public IActionResult InputMovies()
         {
@@ -62,7 +62,7 @@ namespace mission4.Controllers
            
 
         }
-
+        // Constructor for displaying movieTable view
         public IActionResult movieTable()
         {
             var applications = _MovieContext.Responses
@@ -73,6 +73,7 @@ namespace mission4.Controllers
             return View(applications);
         }
 
+        // get and post constructors for editing movies
         [HttpGet]
         public IActionResult Edit (int applicationid)
         {
@@ -92,8 +93,9 @@ namespace mission4.Controllers
             return RedirectToAction("movieTable");
         }
 
+        // get and post constructors for deleting movies
         [HttpGet]
-        public IActionResult Delete (int applicationid)
+        public IActionResult Delete(int applicationid)
         {
             var application = _MovieContext.Responses.Single(x => x.MovieID == applicationid);
 
@@ -101,12 +103,12 @@ namespace mission4.Controllers
         }
 
         [HttpPost]
-        public IActionResult Delete (Application app)
+        public IActionResult Delete(Application app)
         {
             _MovieContext.Responses.Remove(app);
             _MovieContext.SaveChanges();
 
-            return View("movieTable");
+            return RedirectToAction("movieTable");
         }
 
 

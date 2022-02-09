@@ -1199,14 +1199,14 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/kyleevert/Projects/mission4/mission4/mission4.csproj",
+      "projectUniqueName": "/Users/kyleevert/Documents/GitHub/mission5/mission4.csproj",
       "projectName": "mission4",
-      "projectPath": "/Users/kyleevert/Projects/mission4/mission4/mission4.csproj",
+      "projectPath": "/Users/kyleevert/Documents/GitHub/mission5/mission4.csproj",
       "packagesPath": "/Users/kyleevert/.nuget/packages/",
-      "outputPath": "/Users/kyleevert/Projects/mission4/mission4/obj/",
+      "outputPath": "/Users/kyleevert/Documents/GitHub/mission5/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/kyleevert/.nuget/NuGet/NuGet.Config"
+        "/Users/kyleevert/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"

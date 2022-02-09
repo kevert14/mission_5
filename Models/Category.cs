@@ -8,6 +8,8 @@ namespace mission4.Models
 {
     public class Category
     {
+        // linking table for categories
+
         [Key]
         [Required]
         public int CategoryID { get; set; }
